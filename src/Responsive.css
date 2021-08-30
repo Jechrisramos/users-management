@@ -1,0 +1,235 @@
+/*RESPONSIVE LAYOUT*/
+
+/*Laptop-1*/
+@media only screen and (max-width: 1366px) and (min-width: 1280px) {
+    /* Header  */
+
+    /* End of Header */
+
+    /* Footer  */
+
+    /* End of Footer  */
+
+    /* Home Page */
+    h1 span.primaryHeading{
+        font-size: 75px;
+    }
+
+    h1 span.secondaryHeading {
+        font-size: 110px;
+    }
+
+    a.contactInfoItem{ font-size: 18px; }
+    /* End of Home Page */
+} /*End of Laptop-1*/
+
+/*Laptop 2*/
+@media only screen and (max-width: 1280px) and (min-width: 1025px) {
+    /* Header  */
+
+    /* End of Header */
+
+    /* Footer  */
+
+    /* End of Footer  */
+
+    /* Home Page */
+    h1 span.primaryHeading{
+        font-size: 70px;
+    }
+
+    h1 span.secondaryHeading {
+        font-size: 100px;
+    }
+
+    a.contactInfoItem{ font-size: 16px; }
+    /* End of Home Page */
+
+} /*End of Laptop-2
+
+/*Landscape*/
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+    /* Header */
+    header {
+        padding: 5px 10px;
+    }
+    
+    header h3{
+        font-size: 25px;
+    }
+
+    header .navbar-nav{
+        padding-top: 10px;
+    }
+    
+    header .navbar-nav span.navbar-text {
+        margin-left: 0;
+    }
+    /* End of Header */
+
+    /* Footer */
+
+    /* End of Footer */
+
+    /* Home Page */
+    img.heroImage{
+        padding: 40px 20px 0;
+        object-fit: contain;
+        object-position: center;
+      }
+
+    div#heroHeadlineCol{
+        padding: 0 20px 10px;
+    }
+
+    h1 span.primaryHeading,
+    h1 span.secondaryHeading {
+        text-align: center;
+    }
+
+    div.contactInfo{
+        margin: 15px;
+    }
+
+    a.contactInfoItem{
+        display: block;
+        padding: 7px 0;
+        text-align: center;
+        font-size: 16px;
+    }
+    /* End of Home Page */
+}/*end of Landscape*/
+
+/*Tablet*/
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+    /* Header */
+    header {
+        padding: 5px 10px;
+    }
+    
+    header h3{
+        font-size: 25px;
+    }
+
+    header .navbar-nav{
+        padding-top: 10px;
+    }
+    
+    header .navbar-nav span.navbar-text {
+        margin-left: 0;
+    }
+    /* End of Header */
+
+    /* Footer */
+
+    /* End of Footer */
+
+    /* Home Page */
+    img.heroImage{
+        padding: 40px 20px 0;
+        object-fit: contain;
+        object-position: center;
+      }
+
+    div#heroHeadlineCol{
+        padding: 0 20px 10px;
+    }
+
+    h1 span.primaryHeading,
+    h1 span.secondaryHeading {
+        text-align: center;
+    }
+
+    div.contactInfo{
+        margin: 15px;
+    }
+
+    a.contactInfoItem{
+        display: block;
+        padding: 7px 0;
+        text-align: center;
+        font-size: 16px;
+    }
+    /* End of Home Page */
+} /*End of Tablet*/
+
+/*Mobile*/
+@media only screen and (max-width: 480px) and (min-width: 300px) {
+    /* Header */
+    header {
+        padding: 5px 10px;
+    }
+    
+    header h3{
+        font-size: 20px;
+    }
+
+    header .navbar-nav{
+        padding-top: 10px;
+    }
+
+    header .navbar-nav a {
+        font-size: 16px;
+    }
+    
+    header .navbar-nav span.navbar-text {
+        margin-left: 0;
+        font-size: 16px;
+    }
+    /* End of Header */
+
+
+    /* Footer */
+    footer {
+        padding: 10px 10px;
+    }
+    
+    footer * {
+        font-size: 12px;
+    }
+    /* End of Footer */
+
+    /* Home Page */
+    img.heroImage{
+        padding: 40px 20px 0;
+        width: 300px;
+        height: 300px;
+        object-fit: contain;
+        object-position: center;
+      }
+
+    div#heroHeadlineCol{
+        padding: 0 20px 10px;
+    }
+
+    h1 span.primaryHeading,
+    h1 span.secondaryHeading {
+        text-align: center;
+    }
+
+    h1 span.primaryHeading{
+        font-size: 50px;
+    }
+
+    h1 span.secondaryHeading {
+        font-size: 70px;
+    }
+
+    div.contactInfo{
+        margin: 15px;
+    }
+
+    a.contactInfoItem{
+        display: block;
+        padding: 7px 0;
+        text-align: center;
+        font-size: 16px;
+    }
+    /* End of Home Page */
+
+    /* Users Page */
+    div.usersList{
+        padding: 10px;
+    }
+    /* End of Users Page */
+} /*End of Mobile*/

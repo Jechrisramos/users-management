@@ -1,0 +1,44 @@
+Sitewide Layout:
+1. I have added a header and Footer which navigations are home and Users.
+2. I added label of rendered a placeholder user's First Name from app.js line 29 in the right side of the header.
+3. I have also added 404 NoFound Page which will be triggered when a random endpoint is requested.
+4. I created a new Project and used new structure for this app.
+5. Since the name of the Web Application is not mentioned. I named the project as "user-management".
+4. I have added Responsive.css to handle responsive css layout for the web app. Please take note that it is viewable on Desktop, Laptops, Ipad Pro, Tablet and Mobile view.
+5. I decided to use React Bootstrap instead of react-create-app, SCSS or LESS.
+6. I also incorporated 1 dependency for alert box called "sweetalert2" which was used for validation and for Prompt for Creating, Updating and Deleting an user entry.
+
+Page: Home
+1. I have rendered a placeholder user as the content of the Home page which can be seen in App.js line 29.
+
+Page: User
+1. I have accommodated the retrieval of users based on the provided [GET API URL]. 
+2. I was able to incorporate a pagination below the users table
+3. Each page displays 10 entries.
+4. Each user entry has its Edit and Delete Button.
+
+[View 1 User Profile]
+ -- I decided to implement it in a sub page which seems more appropriate than a modal pop-up.
+ -- You can access it by click either the avatar or the email address.
+
+[Create New User]
+ -- Creating a new user entry can be performed by clicking the "Add User Button" below the Hero Section which will trigger a modal pop up.
+ -- I have set-up to add a placeholder avatar image for each successful operation to make the content of the list consistent.
+
+[Update A User]
+ -- Updating a certain entry can be performed by clicking the "Edit Button" which will trigger a modal pop-up where current entries value are displayed on respective field. 
+ -- Changes will reflect once clicking the submit button. To Cancel the operation you can click the Cancel Button or the Exit Icon on the top-right corner of the modal pop-up.
+ -- I have set the email, first name and last name as the editable properties of each entry.
+
+[Delete A User]
+ -- Instead of triggering a modal pop-up form that displays the details and having a Submit Button and Cancel Button, I set the delete functionality by just clicking it as there are no data to be changed but the whole row/document of a certain entry. I believe that incorporating the Delete operation in a modal pop may be an excess in rendering components due to additional scripts.
+
+
+
+
+
+
+
+
+
+

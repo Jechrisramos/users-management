@@ -1,38 +1,289 @@
-.App {
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root{
+	/*fonts*/
+	--primary-font: 'Oxygen', sans-serif;
+
+	/*colors*/
+	--primary-color: #082859;
+	--secondary-color: #AD232D;
+  --accent: #E6B23B;
+	--light-1: #F1F5F8;
+  --light-2: #FFF;
+	--dark-1: #141921;
+	--dark-2: #0F1011;
+}
+
+html, 
+body {
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+	color: var(--dark-1);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--primary-font);
+	color: var(--primary-color);
+  margin: 0 !important;
+}
+
+p, a, button, li, option {
+  font-size: 16px;
+  margin-bottom: 0 !important;
+  font-weight: normal;
+	font-family: var(--primary-font);
+}
+
+a, 
+a:hover {
+  text-decoration: none !important;
+}
+
+button.btn {
+  display: block;
+  margin: 10px auto;
+}
+
+button.btn-sm{
+  display: inline;
+  margin-right: 10px;
+}
+
+div.container {
+  max-width: 1360px;
+}
+
+/* Header */
+header {
+  background-color: var(--primary-color);
+  padding: 5px 20px;
+}
+
+header *{
+ color: var(--light-1);
+}
+
+header h3{
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+header .navbar-nav a {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: light;
+}
+
+header .navbar-nav span.navbar-text {
+  margin-left: 15px;
+  font-size: 17px;
+  color: #f7f7f7;
+}
+/* End of Header */
+
+/* Footer */
+footer {
+  background-color: var(--primary-color);
+  padding: 9px 20px;
+}
+
+footer * {
+  color: var(--light-2);
+  font-size: 14px;
+}
+
+footer p#rights {
+  text-align: right;
+}
+/* End of Footer */
+
+/* NoFound Page */
+img.image404 {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  margin: 10px auto;
+}
+
+div.noResultMessage{
+  padding: 20px;
+  text-align: center;
+}
+/* End of NoFound Page */
+
+/* Home */
+/* Hero */
+div.hero{
+  min-height: 91vh;
+  background-color: #f7f7f7;
+  background-image: url("http://localhost:3000/assets/images/textures/texture-1.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  /* padding: 40px; */
+}
+
+div.hero:After{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  background-color: rgba(255 255 255 / 85%);
+  content: '';
+  z-index: 2;
+}
+
+div.heroContent{
+  z-index: 5;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+img.heroImage{
+  display: block;
+  margin: 0 auto;
+}
+
+div#heroHeadlineCol{
+  padding: 10px 50px 10px 20px;
+}
+
+h1 span.primaryHeading,
+h1 span.secondaryHeading {
+  display: block;
+}
+
+h1 span.primaryHeading {
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 3px;
+  font-size: 70px;
+  color: var(--dark-1);
+}
+
+h1 span.secondaryHeading {
+  font-size: 120px;
+  font-weight: 700;
+}
+
+div.contactInfo {
+  margin-top: 25px;
+}
+
+a.contactInfoItem{
+  padding-right: 30px;
+  font-size: 20px;
+  color: var(--dark-1);
+  transition: 0.15s;
+}
+
+a.contactInfoItem:hover {
+  color: var(--primary-color);
+  transition: 0.18s;
+}
+
+a.contactInfoItem i {
+  font-size: 22px;
+  padding-right: 10px;
+  position: relative;
+  top: 2px;
+}
+/* End of Hero */
+/* End of Home Page */
+
+/* User */
+div.InternalHero{
+  min-height: 20vh;
+  background-color: #f7f7f7;
+  background-image: url("http://localhost:3000/assets/images/textures/texture-2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  /* padding: 40px; */
+}
+
+div.InternalHero:After{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  background-color: rgba(247 247 247 / 85%);
+  content: '';
+  z-index: 2;
+}
+
+div.InternalHero h1 {
+  font-size: 85px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+div.usersList {
+  padding: 40px 20px;
+  min-height: 80vh;
+}
+
+img.avatarThumbnail{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  margin: 0 auto;
+}
+/* End of User */
+
+/* Profile Page  */
+a.navigate{
+  display: block;
+  text-align: right;
+  margin: 15px 10px 0 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+div.card.profileCard{
+  padding: 40px;
+  border-radius: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+div.card.profileCard * {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+div.card.profileCard img{
+  display: block;
+  margin: 0 auto 20px auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+div.card.profileCard h1 {
+  font-size: 50px;
+  font-weight: 300px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+div.card.profileCard a.contactInfoItem {
+  padding-right: 0;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* End of Profile */
