@@ -9,7 +9,7 @@ import { Route, Switch } from "react-router-dom";
 //bootstrap
 import { Container } from "react-bootstrap";
 
-import UserContext from "./UserContext";
+import UserContext from "./UserContext"; 
 
 //components
 import Header from "./components/partials/Header.js";
