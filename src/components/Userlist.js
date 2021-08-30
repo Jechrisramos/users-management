@@ -113,10 +113,8 @@ export default function Users(props){
                 .then(response => response.json())
                 .then(data => {
                     if(data){
-                        //fetchData(); //renders the changes
                         allUsers.push(data);
                         setAllUsers((allUsers) => [...allUsers]);
-                        // setAllUsers((allUsers)=> [...allUsers, data]);
                         console.log(data);
                         Swal.fire({
                             title : "Success",
